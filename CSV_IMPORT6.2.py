@@ -109,8 +109,7 @@ class Application(tk.Tk):
         data = ' '.join(row)
         self.upload_data_to_ai_memory (data, base_url, headers)
 
-    def upload_data_to_ai_memory(self, data, base_url, headers):
-        memory_url = f'{base_url}/memory'
+    def upload_data_to_ai_memory(self, data, base_url, headers)
         current_time = self.created_time_entry.get() or datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
         source_name = self.source_name_entry.get()
         domain_name = self.profile_entry.get()
